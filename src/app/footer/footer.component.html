@@ -1,0 +1,24 @@
+<footer>
+    <section>
+        <div>
+            <div class="logo">
+                <a href="#header" (click)="scrollToTop()"><span>Jonas</span></a>
+            </div>
+            <div class="copyright">
+                <span>© Jonas Hanke 2025</span>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/JonasH93Dev" target="_blank"><img
+                        src="/assets/img/buttons/Github.png" alt="Github"></a>
+                <a href="mailto:jonas.hanke@gmx.net"><img src="/assets/img/buttons/Email.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/jonas-hanke-245625190" target="_blank"><img
+                        src="/assets/img/buttons/LinkedIn.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="imprint">
+            <a [routerLink]="['imprint']"><span>{{ 'FOOTER.IMPRINT' | translate }}</span></a>
+            &nbsp; | &nbsp;
+            <a [routerLink]="['privacy-policy']"><span>{{ 'FOOTER.PRIVACY_POLICY' | translate }}</span></a>
+        </div>
+    </section>
+</footer>

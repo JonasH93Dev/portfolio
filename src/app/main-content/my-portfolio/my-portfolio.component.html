@@ -1,0 +1,18 @@
+<section>
+  <div class="portfolioHeader">
+    <div class="headerTitle">
+      <h2>{{ 'HEADER.PORTFOLIO' | translate }}</h2>
+    </div>
+    <div class="blueLine"></div>
+    <div class="headerCaption">
+      <p>{{ 'MY_PORTFOLIO.TEXT' | translate }}</p>
+    </div>
+  </div>
+
+  <div class="myPortfolio">
+    @for (project of projects; track project) {
+      <app-project [project]="project"></app-project>
+    }
+  </div>
+  <div class="portfolioFirstBackground"></div>
+</section>
