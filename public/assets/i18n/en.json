@@ -19,33 +19,24 @@
   },
   "MY_SKILLS": {
     "TITLE": "My skills",
-    "TEXT": "I have developed over ten projects using a variety of technologies. Here are some of the skills I utilized in the process.",
+    "TEXT": "I have worked on several projects employing different technologies, applying the following skills along the way.",
     "GET_IN_TOUCH": "Get in touch"
   },
   "MY_PORTFOLIO": {
-    "TEXT": "This page showcases samples of my work - please feel free to try them out."
+    "TEXT": "TThis page presents examples of my work — you are welcome to explore them."
   },
   "PROJECTS": {
     "EL_POLLO_LOCO": {
       "TITLE": "El Pollo Loco",
       "STACK": "JavaScript | HTML | CSS",
       "DESCRIPTION": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the chicken attacking the village."
-    },
-    "JOIN": {
-      "TITLE": "JOIN",
-      "STACK": "JavaScript | Firebase | CSS",
-      "DESCRIPTION": "Enhance productivity with a Kanban-inspired task manager. Easily create tasks, drag and drop to organize, assign users, and categorize for streamlined project tracking."
-    },
-    "DABUBBLE": {
-      "TITLE": "DABubble",
-      "STACK": "Angular | TypeScript | Material | Firebase | SCSS",
-      "DESCRIPTION": "A modern chat messenger inspired by Slack. Connect with your colleagues and exchange ideas and information in real-time."
     }
+    
   },
   "CONTACT_SECTION": {
     "TITLE": "Contact",
     "TEXT": "Got a problem to solve?",
-    "CONTENT_ONE": "Contact me through this form. I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "CONTENT_ONE": "Contact me through this form. I look forward to hearing from you, learning about your ideas, and contributing to your projects with my work.",
     "CONTENT_TWO": "<span>Need a Full-Stack developer?&nbsp;<b> Contact me!</b></span>"
   },
   "FORM": {

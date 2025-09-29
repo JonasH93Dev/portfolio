@@ -19,33 +19,24 @@
   },
   "MY_SKILLS": {
     "TITLE": "Fähigkeiten",
-    "TEXT": "Ich habe mehr als zehn Projekte unter Einsatz diverser Technologien realisiert. Hier sind einige der Fähigkeiten, die ich dabei eingesetzt habe.",
+    "TEXT": "Ich habe an mehreren Projekten mit unterschiedlichen Technologien gearbeitet und dabei die folgenden Fähigkeiten eingesetzt.",
     "GET_IN_TOUCH": "Kontakt"
   },
   "MY_PORTFOLIO": {
-    "TEXT": "Auf dieser Seite finden Sie eine Auswahl meiner Projekte. Sie sind herzlich eingeladen, diese auszuprobieren."
+    "TEXT": "Diese Seite präsentiert Beispiele meiner Arbeit — Sie sind herzlich eingeladen, diese auszuprobieren."
   },
   "PROJECTS": {
     "EL_POLLO_LOCO": {
       "TITLE": "El Pollo Loco",
       "STACK": "JavaScript | HTML | CSS",
       "DESCRIPTION": "Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Flaschen zu finden, um gegen die Hühner zu kämpfen, die das Dorf angreifen."
-    },
-    "JOIN": {
-      "TITLE": "JOIN",
-      "STACK": "JavaScript | Firebase | CSS",
-      "DESCRIPTION": "Steigern Sie die Produktivität mit einem von Kanban inspirierten Aufgabenmanager. Erstellen Sie problemlos Aufgaben, ziehen Sie sie zum Organisieren, weisen Sie Benutzer zu und kategorisieren Sie sie für eine effiziente Projektnachverfolgung."
-    },
-    "DABUBBLE": {
-      "TITLE": "DABubble",
-      "STACK": "Angular | TypeScript | Material | Firebase | SCSS",
-      "DESCRIPTION": "Ein moderner Chat-Messenger, inspiriert von Slack. Vernetzen Sie sich mit Ihren Kollegen und tauschen Sie Ideen und Informationen in Echtzeit aus."
     }
+    
   },
   "CONTACT_SECTION": {
     "TITLE": "Kontakt",
     "TEXT": "Gibt es ein Problem zu lösen?",
-    "CONTENT_ONE": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "CONTENT_ONE": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
     "CONTENT_TWO": "<span>Brauchen Sie einen Full-Stack-Entwickler?&nbsp;<b>Kontaktieren Sie mich!</b></span>"
   },
   "FORM": {
