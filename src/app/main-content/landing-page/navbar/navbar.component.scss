@@ -71,7 +71,6 @@
     }
   }
 
-  /* --- Sprachen liegen in einem <span> innerhalb der Desktop-Navigation --- */
   > span {
     position: relative;
     font-size: 23px;
@@ -80,7 +79,6 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
 
-    /* Standard-Hover-/Underline-Regeln für generische <span> NICHT auf .translation anwenden */
     > span.translation > span,
     > .translation > span {
       transition: none !important;
@@ -89,10 +87,6 @@
     > .translation > span::after {
       content: none !important;
       display: none !important;
-    }
-    > span.translation > span:hover,
-    > .translation > span:hover {
-      color: inherit !important;
     }
   }
 }
@@ -144,7 +138,6 @@
 
       > span { cursor: pointer; }
 
-      /* Mobile: Hover-/Underline-Effekte an den Sprach-Buttons deaktivieren */
       > span.translation > span {
         transition: none !important;
       }
@@ -161,11 +154,6 @@
 
 .mobileNav.open { right: 0; }
 
-/* ===================== */
-/* Language Toggle Styles */
-/* ===================== */
-
-/* Container wie in Figma (92x32, horizontal) */
 .translation {
   display: flex;
   flex-direction: row;
@@ -175,45 +163,41 @@
   height: 32px;
 }
 
-/* Inaktive Sprache (Outline) – exakt 38x32 laut Figma */
 .translation > span {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 38px;                /* Figma */
-  height: 32px;               /* Figma */
-  line-height: 32px;          /* zentriert */
+  width: 38px;
+  height: 32px;
+  line-height: 32px;
   border-radius: 10px;
   box-sizing: border-box;
-  cursor: pointer; 
-
+  cursor: pointer;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 18px;            /* Figma */
+  font-size: 18px;
   color: #FFFFFF;
-
   background: transparent;
-  border: 1px solid #70E61C;  /* Outline grün */
-
-  /* keine Animationen für EN/DE */
+  border: 1px solid #70E61C;
   transition: none;
 }
 
-/* Aktive Sprache (gefüllt) – 40x32 laut Figma */
 .translation > span.active {
-  width: 40px;                /* Figma */
-  height: 32px;               /* Figma */
-  background: #70E61C;        /* Grün gefüllt */
-  border: 1px solid #70E61C;  /* gleiche Farbe wie BG */
-  color: #000000;             /* schwarze Schrift auf Grün */
-  font-weight: 700;           /* Figma: bold */
+  width: 40px;
+  height: 32px;
+  background: #70E61C;
+  border: 1px solid #70E61C;
+  color: #000000;
+  font-weight: 700;
 }
 
-/* Sicherheit: jegliche Pseudo-Unterlinien & Hover-Effekte abschalten */
-.translation > span::after { content: none !important; display: none !important; }
-.translation > span:hover { color: inherit !important; }
+.translation > span:not(.active):hover {
+  background: #9747FF;
+  border-color: #9747FF;
+  color: #FFFFFF;
+}
 
-/* ===================== */
+.translation > span::after { content: none !important; display: none !important; }
 
 @media (max-width: 999px) {
   .navigation {
