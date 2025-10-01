@@ -142,5 +142,25 @@
     "PRIVACY_POLICY": "I've read the",
     "PRIVACY_POLICY_LINK": "Privacy Policy",
     "AGREE_TO_PROCESSING": "and agree to the processing of my data as outlined."
-  }
+  },
+
+  "REFERENCES": {
+  "TITLE": "References",
+  "ITEMS": [
+    {
+      "QUOTE": "Jonas really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+      "AUTHOR": "V. Schuster - Team Partner"
+    },
+    {
+      "QUOTE": "Jonas creativity brought fresh ideas that lifted our project to the next level. Her designs always impressed both the team and our clients.",
+      "AUTHOR": "A. Keller - UX Designer"
+    },
+    {
+      "QUOTE": "Jonas showed outstanding technical expertise and solved problems faster than anyone else. Without him, the deadline would have been impossible to meet.",
+      "AUTHOR": "L. Hoffmann - Project Manager"
+    }
+  ]
+}
+
+
 }

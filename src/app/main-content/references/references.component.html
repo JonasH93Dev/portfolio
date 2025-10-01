@@ -1,1 +1,31 @@
-<p>references works!</p>
+<section class="refs" id="references">
+  <div class="refs-row">
+    <div class="refs-card">
+      <div class="refs-quote"></div>
+
+      <p class="refs-text">
+        {{ ('REFERENCES.ITEMS.' + current + '.QUOTE') | translate }}
+      </p>
+
+      <div class="refs-author">
+        <span class="refs-line"></span>
+        <span>{{ ('REFERENCES.ITEMS.' + current + '.AUTHOR') | translate }}</span>
+      </div>
+    </div>
+
+    <div class="refs-avatar-side">
+      <div class="refs-right-line"></div>
+      <img class="refs-avatar" [src]="imgSrc()" alt="Reference person" />
+    </div>
+  </div>
+
+  <div class="refs-controls">
+    <button class="refs-arrow" type="button" aria-label="previous" (click)="prev()">←</button>
+    <div class="refs-dots">
+      <span class="dot" [class.active]="current === 0" (click)="set(0)"></span>
+      <span class="dot" [class.active]="current === 1" (click)="set(1)"></span>
+      <span class="dot" [class.active]="current === 2" (click)="set(2)"></span>
+    </div>
+    <button class="refs-arrow" type="button" aria-label="next" (click)="next()">→</button>
+  </div>
+</section>

@@ -142,5 +142,23 @@
     "PRIVACY_POLICY": "Ich habe die",
     "PRIVACY_POLICY_LINK": "Datenschutzerklärung",
     "AGREE_TO_PROCESSING": "gelesen und stimme der Verarbeitung meiner Daten wie dargelegt zu."
-  }
+  },
+  "REFERENCES": {
+  "TITLE": "Referenzen",
+  "ITEMS": [
+    {
+      "QUOTE": "Jonas hat das Team mit seiner großartigen Organisation und klaren Kommunikation wirklich zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen.",
+      "AUTHOR": "V. Schuster – Team-Partner"
+    },
+    {
+      "QUOTE": "Jonas Kreativität brachte frische Ideen, die unser Projekt auf das nächste Level gehoben haben. Ihre Designs haben sowohl das Team als auch die Kunden begeistert.",
+      "AUTHOR": "A. Keller – UX-Designerin"
+    },
+    {
+      "QUOTE": "Jonas zeigte herausragendes technisches Fachwissen und löste Probleme schneller als jeder andere. Ohne ihn wäre die Deadline unmöglich gewesen.",
+      "AUTHOR": "L. Hoffmann – Projektleiter"
+    }
+  ]
+}
+
 }
