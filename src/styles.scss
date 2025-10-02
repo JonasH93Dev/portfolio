@@ -202,3 +202,14 @@ body::-webkit-scrollbar-thumb {
 .fontPoppins {
     font-family: 'Poppins';
 }
+:root{
+  --container: 1920px;   /* Full HD */
+  --gutter: 100px;       /* Seitenabstand wie Header/Footer */
+}
+
+/* Alle Hauptsektionen auf FH-Breite deckeln und zentrieren */
+.about, .skills, .portfolio, .refs, .contact, .main-content, .hero, .landing {
+  width: min(var(--container), calc(100% - 2 * var(--gutter)));
+  margin-inline: auto;
+}
+

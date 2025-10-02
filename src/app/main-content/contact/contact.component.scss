@@ -3,7 +3,13 @@ section {
   padding-bottom: 100px;
   position: relative;
   z-index: 999;
-  max-width: 1920px;
+
+  width: 100%;            /* neu: volle Breite */
+  max-width: 1920px;      /* FHD-Deckel bleibt */
+  margin: 0 auto;         /* neu: zentrieren */
+  box-sizing: border-box;
+  padding-left: 100px;    /* neu: symmetrisch wie Header/Footer */
+  padding-right: 100px;   /* neu */
 }
 
 /* Headerzeile: Linie + Titel (Figma: gap 32px, zentriert) */
@@ -301,15 +307,13 @@ section {
   display: flex;
   align-items: center;
 
-  > span {
-    > a {
+  > span > a {
+    color: rgba(75, 71, 255, 1);
+    text-decoration: none;
+
+    &:visited {
       color: rgba(75, 71, 255, 1);
       text-decoration: none;
-
-      &:visited {
-        color: rgba(75, 71, 255, 1);
-        text-decoration: none;
-      }
     }
   }
 }
@@ -359,13 +363,10 @@ section {
       height: 25px;
     }
 
-    > span {
-      > a {
-        text-decoration: none;
-        color: #9747FF;
-
-        &:hover { color: #70E61C; }
-      }
+    > span > a {
+      text-decoration: none;
+      color: #9747FF;
+      &:hover { color: #70E61C; }
     }
   }
 }

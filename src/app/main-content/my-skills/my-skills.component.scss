@@ -7,10 +7,14 @@ section {
   position: relative;
   z-index: 999;
   box-sizing: border-box;
+
+  width: 100%;
+  max-width: 1920px;     /* Full HD Deckel */
+  margin: 0 auto;        /* mittig */
   padding-left: 100px;
+  padding-right: 100px;  /* symmetrisch wie Header/Footer */
   padding-bottom: 100px;
   padding-top: 200px;
-  max-width: 1920px;
 }
 
 .myDevStack {
@@ -48,14 +52,8 @@ section {
 }
 
 @keyframes jump {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 .mySkillsContainer {
@@ -142,33 +140,26 @@ section {
 }
 
 @media (max-width: 1350px) {
-  .myDevStack {
-    grid-gap: 30px 0px;
-  }
+  .myDevStack { grid-gap: 30px 0px; }
 
   .mySkillsContainer {
     width: 450px;
     padding-right: 100px;
   }
-  .mySkills {
-    > h2 {
-      font-size: 55px;
-    }
-  }
 
-  .blueLine {
-    top: 45px;
-  }
+  .mySkills > h2 { font-size: 55px; }
+
+  .blueLine { top: 45px; }
 }
 
 @media (max-width: 1241px) {
   section {
     padding-left: 50px;
+    padding-right: 50px;   /* symmetrisch halten */
   }
-  .mySkillsContainer {
-    width: 325px;
-  }
+  .mySkillsContainer { width: 325px; }
 }
+
 @media (max-width: 1111px) {
   .myDevStack {
     grid-template-columns: repeat(3, 1fr);
@@ -179,19 +170,14 @@ section {
 }
 
 @media (max-width: 999px) {
-  .mySkills {
-    > h2 {
-      font-size: 66px;
-    }
+  .mySkills > h2 { font-size: 66px; }
 
-    > p {
-      padding-left: 50px;
-    }
-  }
+  .mySkills > p { padding-left: 50px; }
 
   section {
     flex-direction: column-reverse;
     padding-left: 0px;
+    padding-right: 0px;     /* symmetrisch halten */
     padding-top: 120px;
   }
 
@@ -203,12 +189,10 @@ section {
     padding-left: 0px;
   }
 
-  .mySkills {
-    > h2,
-    p {
-      padding-right: 50px;
-      width: unset;
-    }
+  .mySkills > h2,
+  .mySkills p {
+    padding-right: 50px;
+    width: unset;
   }
 
   .myDevStack {
@@ -252,27 +236,14 @@ section {
 }
 
 @media (max-width: 610px) {
-  .myDevStack {
-    grid-gap: unset;
-  }
-
-  .stack {
-    padding: 15px;
-  }
-
-  .mySkills {
-    padding-right: 10px;
-  }
-
-  .getInTouchContainer {
-    top: 535px;
-  }
+  .myDevStack { grid-gap: unset; }
+  .stack { padding: 15px; }
+  .mySkills { padding-right: 10px; }
+  .getInTouchContainer { top: 535px; }
 }
 
 @media (max-width: 450px) {
-  section {
-    padding-right: 0px;
-  }
+  section { padding-right: 0px; }  /* links schon 0 bei 999px – passt */
   .mySkills {
     padding-right: 0px;
 
@@ -287,17 +258,12 @@ section {
     }
   }
 
-  .blueLine {
-    top: 35px;
-    width: 20px;
-  }
+  .blueLine { top: 35px; width: 20px; }
 
   .stack {
     width: 41.85px;
 
-    > span {
-      font-size: 14px;
-    }
+    > span { font-size: 14px; }
 
     > img {
       width: 41.85px;
@@ -305,13 +271,9 @@ section {
     }
   }
 
-  .getInTouchContainer {
-    top: 505px;
-  }
+  .getInTouchContainer { top: 505px; }
 }
 
 @media (max-width: 375px) {
-  .getInTouchContainer {
-    top: 480px;
-  }
+  .getInTouchContainer { top: 480px; }
 }

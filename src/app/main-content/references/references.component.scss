@@ -1,27 +1,35 @@
+/* =========================================
+   REFERENCES – Figma-exakt, HTML unverändert
+   ========================================= */
+
 .refs {
   position: relative;
   margin: 120px auto 0;
-  width: 1340px;
-  max-width: calc(100% - 200px);
+  width: 100%;
+  max-width: 1920px;            /* Full HD Deckel */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
+  box-sizing: border-box;
+  padding-left: 100px;          /* symmetrische Abstände wie Header/Footer */
+  padding-right: 100px;
 }
 
+/* Die innere Reihe */
 .refs-row {
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;         /* Text und Bild vertikal bündig */
-  gap: 48px;                   /* Figma-Abstand zwischen Karte und Bild */
-  width: 1171.5px;
-  max-width: 100%;
+  align-items: flex-start;       /* Figma: oben bündig */
+  gap: 48px;                     /* Abstand Karte ↔ Avatar */
+  width: 100%;
+  max-width: 1171.5px;           /* Figma Frame-Breite */
+  margin: 0 auto;                /* mittig statt rechtsbündig */
   height: 272px;
-  margin: 0 auto;
 }
 
-/* Karte links */
+/* -------- Karte links -------- */
 .refs-card {
   box-sizing: border-box;
   display: flex;
@@ -78,60 +86,33 @@
   font-size: 18px;
   line-height: 120%;
   color: #FFFFFF;
-  white-space: nowrap;               /* kein Zeilenumbruch */
+  white-space: nowrap;
 }
-
 .refs-line {
   flex: 1 1 auto;
   height: 0;
   border-top: 2px solid #9747FF;
   border-radius: 32px;
 }
-
-/* Autor-Text immer in EINER Zeile lassen */
 .refs-author > span:last-child {
   white-space: nowrap;
   min-width: max-content;
 }
 
-/* rechter Block (Bild) */
-.refs-avatar-side {
-  position: relative;
-  width: 272px;
-  height: 272px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Bild: rund, zugeschnitten, Fokuspunkt (setzt sich gegen alte Regeln durch) */
+/* -------- Avatar rechts -------- */
 .refs .refs-avatar-side > .refs-avatar {
+  box-sizing: border-box !important;
   width: 272px !important;
   height: 272px !important;
   border: 4px solid #9747FF !important;
   border-radius: 50% !important;
   object-fit: cover !important;
-  object-position: center 24% !important; /* bei Bedarf 20–30% anpassen */
+  object-position: center 24% !important;
   display: block !important;
   z-index: 2;
 }
 
-
-/* Verbindungslinie exakt über den 48px-Gap */
-.refs-right-line {
-  position: absolute;
-  left: -48px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 48px;
-  height: 0;
-  border-top: 4px solid #9747FF;
-  z-index: 1;
-}
-
-
-/* Controls */
+/* -------- Controls -------- */
 .refs-controls {
   display: flex;
   align-items: center;
@@ -140,7 +121,6 @@
   width: 184px;
   height: 40px;
 }
-
 .refs-arrow {
   width: 40px;
   height: 40px;
@@ -151,13 +131,11 @@
   color: #70E61C;
   cursor: pointer;
 }
-
 .refs-dots {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .dot {
   width: 8px;
   height: 8px;
@@ -171,18 +149,49 @@
   opacity: 1;
 }
 
-/* Responsive */
+/* -------- Responsive -------- */
 @media (max-width: 1280px) {
-  .refs { max-width: calc(100% - 120px); }
-  .refs-row { gap: 32px; }
-  .refs-card { padding: 40px 80px; width: auto; flex: 1; }
+  .refs {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .refs-row {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .refs-card {
+    padding: 40px 80px;
+    width: auto;
+    flex: 0 1 851.5px;
+  }
   .refs-quote { left: -68px; top: -48px; }
 }
+
 @media (max-width: 1024px) {
-  .refs { max-width: calc(100% - 80px); }
-  .refs-row { flex-direction: column; align-items: center; height: auto; }
-  .refs-card { width: 100%; height: auto; }
-  .refs-avatar-side { width: 240px; height: 240px; }
-  .refs-avatar { width: 240px; height: 240px; }
-  .refs-right-line { display: none; }
+  .refs {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .refs-row {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .refs-card {
+    width: 100%;
+    height: auto;
+  }
+  .refs-avatar-side {
+    width: 240px;
+    height: 240px;
+    align-self: center;
+    margin-right: 0;
+  }
+  .refs-avatar {
+    width: 240px;
+    height: 240px;
+  }
+  .refs-avatar-side::before { display: none; }
 }
