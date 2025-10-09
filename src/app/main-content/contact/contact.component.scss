@@ -4,47 +4,58 @@ section {
   position: relative;
   z-index: 999;
 
-  width: 100%;            /* neu: volle Breite */
-  max-width: 1920px;      /* FHD-Deckel bleibt */
-  margin: 0 auto;         /* neu: zentrieren */
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   box-sizing: border-box;
-  padding-left: 100px;    /* neu: symmetrisch wie Header/Footer */
-  padding-right: 100px;   /* neu */
+  padding-left: 0px;     /* symmetrisch wie Header/Footer – links 0, rechts 100 in deinem Layout */
+  padding-right: 100px;
 }
 
-/* Headerzeile: Linie + Titel (Figma: gap 32px, zentriert) */
+/* ===================== CONTACT-HEADER ===================== */
+/* Linie links + Titel mittig + dynamisch responsiv */
 .contactHeader {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;   /* Titel bleibt exakt mittig */
-  gap: 32px;                 /* Abstand Linie <-> Titel wie Figma */
+  justify-content: center;    /* zentriert das gesamte Trio: Linie – Titel – (unsichtbarer) Spacer */
+  gap: 32px;                  /* Figma-Abstand Linie <-> Titel */
   width: 100%;
   margin-bottom: 50px;
 }
 
-/* Violette Linie links vom Titel – füllt flexibel auf, verschiebt nichts */
+/* Lila Linie – wächst mit der verfügbaren Breite */
 .blueLine {
-  height: 0;                        /* Linie als Border zeichnen */
-  border-top: 4px solid #9747FF;    /* Figma-Farbe */
+  height: 4px;
+  background: #9747FF;
   border-radius: 2px;
-  flex: 1 1 auto;                   /* füllt links den kompletten freien Platz */
-  min-width: 0;
-  align-self: center;               /* vertikal mittig auf Titellinie */
+  flex: 1 1 0;                /* dynamische Länge (responsive) */
+  min-width: 40px;            /* kleiner Sicherheitswert, kann auch 0 sein */
 }
 
-/* Titelblock (fixe Breite aus Figma, zentriert) */
+/* Unsichtbarer rechter Gegenpart – gleiche Flex-Regel wie links */
+.contactHeader::after {
+  content: "";
+  height: 4px;
+  flex: 1 1 0;                /* sorgt dafür, dass der Titel geometrisch in der Mitte bleibt */
+}
+
+/* Titelblock: keine feste Breite nötig, Text bleibt mittig durch Flex-Setup */
 .contactTitle {
   display: flex;
   align-items: center;
   justify-content: center;
 
   > h2 {
-    font-size: 90px;
+    font-size: 90px;          /* Figma */
     font-weight: 700;
+    line-height: 120%;
+    margin: 0;
     text-align: center;
+    color: #fff;
   }
 }
+/* ===================== /CONTACT-HEADER ===================== */
 
 .contactContent {
   height: 600px;
@@ -371,39 +382,4 @@ section {
   }
 }
 
-@media (max-width: 1120px) {
-  .contactHeader { gap: 8px; }
-  .contactTitle > h2 { font-size: 66px; }
-  .blueLine { border-top-width: 4px; } /* Breite bleibt flexibel */
-  .contactContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: unset;
-    padding-left: 75px;
-    padding-right: 75px;
-  }
-  .contactText { width: 100%; margin-bottom: 50px; }
-  .contactFormContainer { width: 100%; }
-  .formSubmit > button {
-    width: 195px !important;
-    height: 49px !important;
-    font-size: 16px !important;
-  }
-  .contactBackground { left: -300px; }
-  .goUp { right: 75px; }
-}
-
-@media (max-width: 585px) {
-  .contactContent { padding-left: 50px; padding-right: 50px; }
-  .goUp { right: 50px; }
-}
-
-@media (max-width: 450px) {
-  .contactTitle h2 { font-size: 45px; }
-  .contactTextTitle h3 { font-size: 23px; }
-  .blueLine { border-top-width: 4px; }
-  .privacyText { font-size: 14px; }
-  .contactContent { padding-left: 20px; padding-right: 20px; }
-  .goUp { right: 20px; }
-}
+/* keine zusätzlichen @media-Regeln nötig – Flex regelt die Responsivität */

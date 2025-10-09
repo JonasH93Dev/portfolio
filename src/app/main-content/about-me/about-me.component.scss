@@ -23,9 +23,18 @@ section {
   flex-direction: column;
   gap: 30px;
   z-index: 1000 !important;
+  align-items: flex-start;
 
   > h2 {
     font-size: 90px;
+  }
+
+  /* ✅ NEU: Breite der Copy an Figma anlehnen (471px) */
+  /* Dadurch bleiben alle Texte (Intro + Bullet-Zeilen) so schmal wie gewünscht */
+  > p,
+  .textContainer {
+    max-width: 471px;
+    width: 100%;
   }
 }
 
@@ -79,9 +88,7 @@ section {
   right: 0px;
   bottom: 150px;
   z-index: 999;
-  
 }
-
 
 .textContainer {
   display: flex;
@@ -124,9 +131,15 @@ section {
   }
 
   .aboutImage { display: none; }
-  .aboutText { width: 100%; }
+  .aboutText {
+    width: 100%;
 
- 
+    /* ✅ Mobil: volle Breite erlauben, damit es luftig bleibt */
+    > p,
+    .textContainer {
+      max-width: none;
+    }
+  }
 }
 
 @media (max-width: 525px) {
