@@ -14,15 +14,15 @@
   "ABOUT_ME": {
     "TITLE": "Über mich",
     "INTRO_TEXT": "Hallo! Ich bin Jonas Hanke, ein Full-Stack-Entwickler aus Hünfeld, Deutschland. Meine Leidenschaft liegt darin, funktionale und moderne Softwarelösungen zu entwickeln, die reale Probleme effizient lösen.",
-    "HISTORY_TEXT": "Meine berufliche Reise begann in der Robotersimulation und Prozessplanung, wo ich viele Jahre in Projekten für führende Unternehmen der Automobilindustrie tätig war. Mit dieser Erfahrung im technischen Umfeld habe ich 2025 die Weiterbildung zum Full-Stack-Entwickler absolviert, um meine Fähigkeiten im Bereich Softwareentwicklung auszubauen.",
-    "BACKGROUND_TEXT": "Die Kombination aus Ingenieurwissen und Webtechnologien ermöglicht es mir, analytische Präzision mit kreativer Umsetzung zu verbinden. Dabei lege ich Wert auf sauberen Code, moderne Tools wie Angular und TypeScript sowie eine enge Zusammenarbeit mit Kunden und Teams."
+    "HISTORY_TEXT": "Meine berufliche Reise begann in der Robotersimulation und Prozessplanung, wo ich viele Jahre in Projekten für führende Unternehmen der Automobilindustrie tätig war. 2025 habe ich die Weiterbildung zum Full-Stack-Entwickler abgeschlossen, um meine Expertise in der Softwareentwicklung auszubauen.",
+    "BACKGROUND_TEXT": "Die Kombination aus Ingenieurwissen und Webtechnologien ermöglicht es mir, analytische Präzision mit kreativer Umsetzung zu verbinden. Ich lege Wert auf sauberen Code, moderne Tools wie Angular und TypeScript sowie eine enge Zusammenarbeit mit Kunden und Teams."
   },
   "MY_SKILLS": {
     "TITLE": "Fähigkeiten",
     "TEXT": "Ich habe an mehreren Projekten mit unterschiedlichen Technologien gearbeitet und dabei die folgenden Fähigkeiten eingesetzt.",
-    "SUB": "Suchst du nach <span class='accent'>einem weiteren Skill?</span>",
-    "COPY": "Zeige Begeisterung für das Erlernen neuer Technologien<br>und Frameworks.",
-    "GET_IN_TOUCH": "Kontakt"
+    "SUB": "Fehlt eine <span class='accent'>weitere Fähigkeit?</span>",
+    "COPY": "Ich bin neugierig auf neue Technologien<br>und Frameworks.",
+    "GET_IN_TOUCH": "Kontakt aufnehmen"
   },
   "MY_PORTFOLIO": {
     "TEXT": "Diese Seite präsentiert Beispiele meiner Arbeit — Sie sind herzlich eingeladen, diese auszuprobieren."
@@ -51,18 +51,53 @@
     "MESSAGE_SENT_CONFIRMATION": "Die Nachricht wurde erfolgreich versendet!"
   },
   "FOOTER": {
-    "IMPRINT": "Impressum",
-    "PRIVACY_POLICY": "Datenschutz"
+    "IMPRINT": "Rechtliche Angaben"
   },
   "IMPRINT": {
     "TITLE": "Impressum",
+    "SECTION_TITLE": "Impressum",
     "TMG_INFO": "Angaben gemäß § 5 TMG",
     "POSTAL_ADDRESS": "Postanschrift",
     "CONTACT": "Kontakt",
     "PHONE": "Telefon",
     "EMAIL": "E-Mail",
     "WEBSITE_NOTICE": "Hinweis zur Webseite",
-    "IMPRINT_GENERATOR": "Das Impressum wurde mit dem Impressum-Generator von"
+    "IMPRINT_GENERATOR": "Das Impressum wurde mit dem Impressum-Generator von",
+    "LINES": {
+      "NAMES": "Jonas Hanke",
+      "ADDRESS": "Molzbacher Str. 44",
+      "POSTCODE_CITY": "36088 Hünfeld",
+      "EXPLORING": "Exploring the Board",
+      "EMAIL": "E-Mail: jonas.hanke@gmx.net"
+    },
+    "ACCEPTANCE": {
+      "TITLE": "Akzeptanz der Bedingungen",
+      "TEXT": "Durch den Zugriff auf und die Nutzung von Portfolio (Produkt) erkennen Sie die folgenden Bedingungen sowie Richtlinien und Änderungen an, die Ihnen von Zeit zu Zeit vorgelegt werden können. Wir, die aufgeführten Studierenden, können die Bedingungen von Zeit zu Zeit ohne Ankündigung ändern."
+    },
+    "SCOPE": {
+      "TITLE": "Umfang und Eigentum am Produkt",
+      "TEXT": "Portfolio wurde im Rahmen eines studentischen Gruppenprojekts in einem Webentwicklungs-Bootcamp der Developer Akademie GmbH entwickelt. Es dient Bildungszwecken und ist nicht für umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher können wir keine gleichbleibende Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder sonstige Qualitätsmerkmale dieses Produkts garantieren. Das Design von Portfolio ist Eigentum der Developer Akademie GmbH. Unbefugte Nutzung, Vervielfältigung, Modifikation, Verbreitung oder Replikation des Designs ist strengstens untersagt.",
+      "TEXT_1": "Portfolio wurde im Rahmen eines studentischen Gruppenprojekts in einem Webentwicklungs-Bootcamp der Developer Akademie GmbH entwickelt. Es dient Bildungszwecken und ist nicht für umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher können wir keine gleichbleibende Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder sonstige Qualitätsmerkmale dieses Produkts garantieren.",
+      "TEXT_2": "Das Design von Portfolio ist Eigentum der Developer Akademie GmbH. Unbefugte Nutzung, Vervielfältigung, Modifikation, Verbreitung oder Replikation des Designs ist strengstens untersagt."
+    },
+    "PROPRIETARY": {
+      "TITLE": "Schutzrechte",
+      "TEXT": "Abgesehen vom Design der Developer Akademie GmbH behalten wir, die aufgeführten Studierenden, alle Schutzrechte an Portfolio, einschließlich zugehöriger urheberrechtlich geschützter Materialien, Marken und sonstiger Schutzrechte."
+    },
+    "USE": {
+      "TITLE": "Nutzung des Produkts",
+      "TEXT": "Portfolio ist ausschließlich für rechtmäßige Zwecke gemäß allen anwendbaren Gesetzen und Vorschriften bestimmt. Jegliche Nutzung für illegale Aktivitäten oder zum Belästigen, Schädigen, Bedrohen oder Einschüchtern anderer Personen ist strengstens untersagt. Für Ihre Interaktionen mit anderen Nutzerinnen und Nutzern von Portfolio sind ausschließlich Sie verantwortlich."
+    },
+    "DISCLAIMER": {
+      "TITLE": "Haftungsausschluss",
+      "TEXT": "Portfolio wird „wie besehen“ ohne Gewährleistung jeglicher Art bereitgestellt, ausdrücklich oder stillschweigend, einschließlich, aber nicht beschränkt auf stillschweigende Garantien der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung. In keinem Fall haften wir, die aufgeführten Studierenden, oder die Developer Akademie für direkte, indirekte, zufällige, besondere, Folgeschäden oder exemplarische Schäden – einschließlich, aber nicht beschränkt auf entgangenen Gewinn, Goodwill, Nutzung, Daten oder andere immaterielle Verluste –, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden, die sich aus der Nutzung oder Leistung von Portfolio ergeben."
+    },
+    "INDEMNITY": {
+      "TITLE": "Freistellung",
+      "TEXT": "Sie erklären sich damit einverstanden, uns, die aufgeführten Studierenden, die Developer Akademie sowie unsere verbundenen Unternehmen, Partner, Leitungsorgane, Beauftragten und Mitarbeitenden von jeglichen Ansprüchen, Forderungen, Schäden, Kosten oder Haftungen (einschließlich angemessener Rechtsanwaltsgebühren) freizustellen und schadlos zu halten, die aus Ihrer Nutzung von Portfolio und/oder Ihrem Verstoß gegen dieses Impressum entstehen.",
+      "CONTACT_LINE": "Für Fragen oder Mitteilungen kontaktieren Sie uns bitte unter [Kontakt-E-Mail].",
+      "DATE": "Datum: 26. Juli 2025"
+    }
   },
   "PRIVACY_POLICY": {
     "TITLE": "Datenschutzerklärung",
@@ -71,7 +106,7 @@
     "GENERAL_NOTES_TEXT": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.",
     "DATA_COLLECTION": "Datenerfassung auf dieser Website",
     "DATA_COLLECTION_RESPONSIBILITY": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
-    "DATA_PROCESSING": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.",
+    "DATA_PROCESSING": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.",
     "HOW_WE_COLLECT_DATA": "Wie erfassen wir Ihre Daten?",
     "HOW_WE_COLLECT_DATA_TEXT": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.",
     "HOW_WE_COLLECT_DATA_AUTOMATICALLY": "Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.",
@@ -81,40 +116,40 @@
     "YOUR_DATA_RIGHTS_TEXT": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.",
     "DATA_PROTECTION_INQUIRIES": "Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.",
     "HOSTING_SECTION_TITLE": "2. Hosting",
-    "HOSTING_CONTENT": "Wir hosten die Inhalte unserer Website bei folgendem Anbieter:",
-    "HOSTING_PROVIDER_TITLE": "All-Inkl",
-    "HOSTING_PROVIDER_DETAILS": "Anbieter ist die ALL-INKL.COM - Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (nachfolgend All-Inkl). Details entnehmen Sie der Datenschutzerkl&auml;rung von All-Inkl:",
-    "HOSTING_PROVIDER_LINK": "https://all-inkl.com/datenschutzinformationen/",
-    "HOSTING_LEGAL_BASE": "Die Verwendung von All-Inkl erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und &sect; 25 Abs. 1 TTDSG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z.B. Device-Fingerprinting) im Sinne des TTDSG umfasst. Die Einwilligung ist jederzeit widerrufbar.",
+    "HOSTING_CONTENT": "Wir hosten die Inhalte unserer Website auf einem eigenen Server:",
+    "HOSTING_PROVIDER_TITLE": "Self-Hosting (eigener Server)",
+    "HOSTING_PROVIDER_DETAILS": "Diese Website wird auf unserem eigenen Server betrieben. Es wird kein externer Hosting-Anbieter genutzt; daher gilt keine gesonderte Anbieter-Datenschutzerklärung.",
+    "HOSTING_PROVIDER_LINK": "",
+    "HOSTING_LEGAL_BASE": "Das Self-Hosting erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an der technisch zuverlässigen und sicheren Bereitstellung unserer Website. Sofern eine Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TTDSG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) umfasst. Die Einwilligung ist jederzeit widerrufbar.",
     "CONTRACT_PROCESSING": "Auftragsverarbeitung",
-    "CONTRACT_PROCESSING_TEXT": "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.",
+    "CONTRACT_PROCESSING_TEXT": "Da das Hosting auf unserem eigenen Server stattfindet, setzen wir hierfür keinen externen Auftragsverarbeiter ein. Sofern wir für einzelne Verarbeitungsvorgänge Dienstleister beauftragen, schließen wir mit diesen Auftragsverarbeitungsverträge gemäß Art. 28 DSGVO.",
     "GENERAL_INFO_AND_OBLIGATIONS_TITLE": "3. Allgemeine Hinweise und Pflichtinformationen",
     "DATA_PROTECTION": "Datenschutz",
     "DATA_PROTECTION_TEXT": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
     "PERSONAL_DATA_COLLECTION": "Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.",
-    "INTERNET_SECURITY_WARNING": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.",
+    "INTERNET_SECURITY_WARNING": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.",
     "RESPONSIBLE_PARTY_NOTICE": "Hinweis zur verantwortlichen Stelle",
     "RESPONSIBLE_ENTITY": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:",
     "RESPONSIBLE_ENTITY_DETAILS": "Jonas Hanke<br />Molzbacher Str. 44<br />36088 Hünfeld",
     "CONTACT_INFO": "Telefon: +4915117213405<br />E-Mail: jonas.hanke@gmx.net",
-    "RESPONSIBLE_ENTITY_DEFINITION": "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.",
+    "RESPONSIBLE_ENTITY_DEFINITION": "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen, etc.) entscheidet.",
     "STORAGE_DURATION": "Speicherdauer",
     "STORAGE_DURATION_TEXT": "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.",
     "LEGAL_BASIS_GENERAL_NOTES": "Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website",
-    "LEGAL_BASIS_FOR_PROCESSING": "Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von § 25 Abs. 1 TTDSG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. Über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden Absätzen dieser Datenschutzerklärung informiert.",
+    "LEGAL_BASIS_FOR_PROCESSING": "Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Kategorien personenbezogener Daten nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übermittlung personenbezogener Daten in Drittländer erfolgt die Verarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder den Zugriff auf Informationen in Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von § 25 Abs. 1 TTDSG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern dies zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist, auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. Über die jeweils einschlägigen Rechtsgrundlagen wird in den folgenden Abschnitten dieser Datenschutzerklärung informiert.",
     "DATA_RECIPIENTS": "Empfänger von personenbezogenen Daten",
-    "DATA_SHARING": "Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich. Wir geben personenbezogene Daten nur dann an externe Stellen weiter, wenn dies im Rahmen einer Vertragserfüllung erforderlich ist, wenn wir gesetzlich hierzu verpflichtet sind (z. B. Weitergabe von Daten an Steuerbehörden), wenn wir ein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden nur auf Grundlage eines gültigen Vertrags über Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung wird ein Vertrag über gemeinsame Verarbeitung geschlossen.",
-    "REVOCATION_OF_CONsent": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
+    "DATA_SHARING": "Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich. Wir geben personenbezogene Daten nur dann an externe Stellen weiter, wenn dies im Rahmen einer Vertragserfüllung erforderlich ist, wenn wir gesetzlich hierzu verpflichtet sind (z. B. Weitergabe von Daten an Steuerbehörden), wenn wir ein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden nur auf Grundlage eines gültigen Auftragsverarbeitungsvertrags weiter. Im Falle einer gemeinsamen Verarbeitung wird ein Vertrag über gemeinsame Verarbeitung geschlossen.",
+    "REVOCATION_OF_CONSENT": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
     "REVOCATION_OF_CONSENT_TEXT": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.",
     "OBJECTION_RIGHT": "Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)",
-    "OBJECTION_RIGHT_TEXT": "WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).",
+    "OBJECTION_RIGHT_TEXT": "WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DER EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN, ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).",
     "OBJECTION_RIGHT_FOR_DIRECT_ADVERTISING": "WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).",
     "RIGHT_TO_COMPLAIN": "Beschwerderecht bei der zuständigen Aufsichtsbehörde",
     "RIGHT_TO_COMPLAIN_TEXT": "Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.",
     "RIGHT_TO_DATA_PORTABILITY": "Recht auf Datenübertragbarkeit",
     "RIGHT_TO_DATA_PORTABILITY_TEXT": "Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.",
     "ACCESS_CORRECTION_DELETION": "Auskunft, Berichtigung und Löschung",
-    "ACCESS_CORRECTION_DELETION_TEXT": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.",
+    "ACCESS_CORRECTION_DELETION_TEXT": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.",
     "RIGHT_TO_RESTRICTION_OF_PROCESSING": "Recht auf Einschränkung der Verarbeitung",
     "RIGHT_TO_RESTRICTION_OF_PROCESSING_TEXT": "Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:",
     "RESTRICTION_OF_PROCESSING_CONDITIONS": [
@@ -123,19 +158,19 @@
       "Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.",
       "Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen."
     ],
-    "RESTRICTED_PROCESSING_DATA_USAGE": "Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten - von ihrer Speicherung abgesehen - nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.",
+    "RESTRICTED_PROCESSING_DATA_USAGE": "Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.",
     "SSL_TLS_ENCRYPTION": "SSL- bzw. TLS-Verschlüsselung",
-    "SSL_TLS_ENCRYPTION_EXPLANATION": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.",
+    "SSL_TLS_ENCRYPTION_EXPLANATION": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie z. B. Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.",
     "SSL_TLS_ENCRYPTION_EFFECT": "Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.",
     "DATA_COLLECTION_ON_WEBSITE": "4. Datenerfassung auf dieser Website",
     "CONTACT_FORM": "Kontaktformular",
     "CONTACT_FORM_TEXT": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
-    "PROCESSING_BASED_ON": "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.",
-    "DATA_RETENTION_CONTACT_FORM": "Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen - insbesondere Aufbewahrungsfristen - bleiben unberührt.",
+    "PROCESSING_BASED_ON": "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.",
+    "DATA_RETENTION_CONTACT_FORM": "Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.",
     "INQUIRY_VIA_EMAIL_PHONE_FAX": "Anfrage per E-Mail, Telefon oder Telefax",
     "INQUIRY_VIA_EMAIL_PHONE_FAX_TEXT": "Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
-    "BASIS_FOR_DATA_PROCESSING": "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.",
-    "RETENTION_OF_CONTACT_INQUIRY_DATA": "Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen - insbesondere gesetzliche Aufbewahrungsfristen - bleiben unberührt.",
+    "BASIS_FOR_DATA_PROCESSING": "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.",
+    "RETENTION_OF_CONTACT_INQUIRY_DATA": "Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.",
     "SOURCE": "Quelle",
     "SOURCE_TEXT": "<a href='https://www.e-recht24.de'>https://www.e-recht24.de</a>"
   },
@@ -152,7 +187,7 @@
         "AUTHOR": "V. Schuster – Team-Partner"
       },
       {
-        "QUOTE": "Jonas Kreativität brachte frische Ideen, die unser Projekt auf das nächste Level gehoben haben. Ihre Designs haben sowohl das Team als auch die Kunden begeistert.",
+        "QUOTE": "Jonas' Kreativität brachte frische Ideen, die unser Projekt auf das nächste Level gehoben haben. Ihre Designs haben sowohl das Team als auch die Kunden begeistert.",
         "AUTHOR": "A. Keller – UX-Designerin"
       },
       {

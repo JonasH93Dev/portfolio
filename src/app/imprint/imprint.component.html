@@ -1,24 +1,48 @@
 <app-navbar></app-navbar>
+
 <section>
   <div>
-  <h1>{{ "IMPRINT.TITLE" | translate }}</h1>
-
-  <h2>{{ "IMPRINT.TMG_INFO" | translate }}</h2>
-
-  <h3>{{ "IMPRINT.POSTAL_ADDRESS" | translate }}</h3>
-  <p>Jonas Hanke <br /> Molzbacher Str. 44 <br /> 36088 Hünfeld</p>
-
-  <h2>{{ "IMPRINT.CONTACT" | translate }}</h2>
-  <p>
-    {{ "IMPRINT.PHONE" | translate }}: +4915117213405<br />
-    {{ "IMPRINT.EMAIL" | translate }}: jonas.hanke&#64;gmx.net
-  </p>
-
-  <h3>{{ "IMPRINT.WEBSITE_NOTICE" | translate }}</h3>
-  <p>
-    {{ "IMPRINT.IMPRINT_GENERATOR" | translate }}
-    <a href="https://www.e-recht24.de">e-recht24.de</a>
-  </p>
+    <!-- zentrierter Titel + Linien -->
+    <div class="title-row">
+  <span class="title-line title-line--left"></span>
+  <h1 class="legal-title">{{ 'IMPRINT.TITLE' | translate }}</h1>
+  <span class="title-line title-line--right"></span>
 </div>
+
+    <!-- „Imprint“ + Liste und Zeilen aus Bild -->
+    <h2>{{ 'IMPRINT.SECTION_TITLE' | translate }}</h2>
+    <ul class="imprint-list">
+  <li>{{ 'IMPRINT.LINES.NAMES' | translate }}</li>
+  <li>{{ 'IMPRINT.LINES.ADDRESS' | translate }}</li>
+  <li>{{ 'IMPRINT.LINES.POSTCODE_CITY' | translate }}</li>
+</ul>
+<h3>{{ 'IMPRINT.LINES.EXPLORING' | translate }}</h3>
+<p>{{ 'IMPRINT.LINES.EMAIL' | translate }}</p>
+
+    <!-- Rechtstexte -->
+    <div class="legal-sections">
+      <h3>{{ 'IMPRINT.ACCEPTANCE.TITLE' | translate }}</h3>
+      <p>{{ 'IMPRINT.ACCEPTANCE.TEXT' | translate }}</p>
+
+      <h3>{{ 'IMPRINT.SCOPE.TITLE' | translate }}</h3>
+      <p>{{ 'IMPRINT.SCOPE.TEXT_1' | translate }}</p>
+      <p>{{ 'IMPRINT.SCOPE.TEXT_2' | translate }}</p>
+
+      <h3>{{ 'IMPRINT.PROPRIETARY.TITLE' | translate }}</h3>
+      <p>{{ 'IMPRINT.PROPRIETARY.TEXT' | translate }}</p>
+
+      <h3>{{ 'IMPRINT.USE.TITLE' | translate }}</h3>
+      <p>{{ 'IMPRINT.USE.TEXT' | translate }}</p>
+
+      <h3>{{ 'IMPRINT.DISCLAIMER.TITLE' | translate }}</h3>
+      <p>{{ 'IMPRINT.DISCLAIMER.TEXT' | translate }}</p>
+
+      <h3>{{ 'IMPRINT.INDEMNITY.TITLE' | translate }}</h3>
+      <p>{{ 'IMPRINT.INDEMNITY.TEXT' | translate }}</p>
+      <p>{{ 'IMPRINT.INDEMNITY.CONTACT_LINE' | translate }}</p>
+      <p>{{ 'IMPRINT.INDEMNITY.DATE' | translate }}</p>
+    </div>
+  </div>
 </section>
-<img class="lpBackground"src="/assets/img/fold.png" alt="Background">
+
+<img class="lpBackground" src="/assets/img/fold.png" alt="">
