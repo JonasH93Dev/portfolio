@@ -126,8 +126,8 @@ section {
 .blueLine {
   position: fixed;              /* relativ zum Viewport */
   top: 70px;
-  left: 670px;                     /* direkt am rechten Rand */
-  width: 200px;
+  right: -100px;                     /* direkt am rechten Rand */
+  width: 68px;
   height: 4px;
   border-radius: 2px;
   background-color: #9747FF;

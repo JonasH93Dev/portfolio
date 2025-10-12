@@ -161,7 +161,7 @@
 /* exakte, nicht-responsive Platzierung – nur Anzeige */
 .aboutBackground {
   position: absolute;
-  right: -140px;                  /* an rechten Rand heraustreten lassen */
+  right: 0px;                  /* an rechten Rand heraustreten lassen */
   top: -640px;                   /* so, dass er hinter Avatar beginnt */
   width: 428.59px;               /* Figma: 428.59 px */
   height: auto;                  /* keine Verzerrung */
