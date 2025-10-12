@@ -193,6 +193,12 @@ section {
     font-size: 66px;
   }
 
+  /* Override: nur unter 999px den violetten Block (p:nth-of-type(2)) nach unten schieben */
+.mySkills > p:nth-of-type(2) {
+    margin-top: 550px; /* Wert wie im Screenshot; bei Bedarf feinjustieren */
+  }
+
+
   .mySkills > p {
     padding-left: 50px;
   }
@@ -241,7 +247,6 @@ section {
   }
 
   .getInTouchContainer {
-    position: relative;
     top: 800px;
     width: 100%;
     justify-content: center;
@@ -262,6 +267,9 @@ section {
   .myDevStack {
     grid-gap: unset;
   }
+  .mySkills > p:nth-of-type(2) {
+    margin-top: 550px; /* Wert wie im Screenshot; bei Bedarf feinjustieren */
+  }
   .stack {
     padding: 15px;
   }
@@ -276,6 +284,10 @@ section {
 @media (max-width: 450px) {
   section {
     padding-right: 0px;
+  }
+
+  .mySkills > p:nth-of-type(2) {
+    margin-top: 550px; /* Wert wie im Screenshot; bei Bedarf feinjustieren */
   }
 
   .mySkills {
@@ -318,6 +330,9 @@ section {
 @media (max-width: 375px) {
   .getInTouchContainer {
     top: 480px;
+  }
+  .mySkills > p:nth-of-type(2) {
+    margin-top: 550px; /* Wert wie im Screenshot; bei Bedarf feinjustieren */
   }
 }
 
@@ -364,5 +379,8 @@ section {
 @media (max-width: 640px) {
   .mySkills > p:nth-of-type(2) {
     font-size: 28px;
+  }
+  .mySkills > p:nth-of-type(2) {
+    margin-top: 550px; /* Wert wie im Screenshot; bei Bedarf feinjustieren */
   }
 }

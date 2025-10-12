@@ -382,4 +382,90 @@ section {
   }
 }
 
-/* keine zusätzlichen @media-Regeln nötig – Flex regelt die Responsivität */
+@media (max-width: 1120px) {
+  .contactHeader {
+    gap: 8px;
+  }
+
+  .contactTitle {
+    >h2 {
+      font-size: 66px;
+    }
+  }
+
+  .blueLine {
+    width: 75px;
+  }
+
+  .contactContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: unset;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .contactText {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .contactFormContainer {
+    width: 100%;
+  }
+
+  .formSubmit {
+    >button {
+      width: 195px !important;
+      height: 49px !important;
+      font-size: 16px !important;
+    }
+  }
+
+  .contactBackground {
+    left: -300px;
+  }
+
+  .goUp {
+    right: 75px;
+  }
+}
+
+@media (max-width: 585px) {
+  .contactContent {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .goUp {
+    right: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .contactTitle h2 {
+    font-size: 45px;
+  }
+
+  .contactTextTitle h3 {
+    font-size: 23px;
+  }
+
+  .blueLine {
+    width: 20px;
+  }
+
+  .privacyText {
+    font-size: 14px;
+  }
+
+  .contactContent {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .goUp {
+    right: 20px;
+  }
+}

@@ -236,56 +236,137 @@ section {
   }
 }
 
-/* ---------- Breakpoints ---------- */
-
 @media (max-width: 1570px) {
-  .titleOne { width: 80px; }
-  .titleOne span { font-size: 48.5px; }
-  .titleTwo span { font-size: 65px; line-height: 60px; }
-  .titleThree span { font-size: 58px; line-height: 55.5px; }
+
+  .titleOne {
+    width: 80px;
+  }
+
+  .titleOne span {
+    font-size: 48.5px;
+  }
+
+  .titleTwo span {
+    font-size: 65px;
+    line-height: 60px;
+  }
+
+  .titleThree span {
+    font-size: 58px;
+    line-height: 55.5px;
+  }
 }
 
 @media (max-width: 1480px) {
-  .titleOne { width: 70px; }
-  .titleOne span { font-size: 45.5px; }
-  .titleTwo span { font-size: 59px; line-height: 60px; }
-  .titleThree span { font-size: 52.8px; line-height: 55.5px; }
-  .lpText { margin-right: unset; }
+  .titleOne {
+    width: 70px;
+  }
+
+  .titleOne span {
+    font-size: 45.5px;
+  }
+
+  .titleTwo span {
+    font-size: 59px;
+    line-height: 60px;
+  }
+
+  .titleThree span {
+    font-size: 52.8px;
+    line-height: 55.5px;
+  }
+
+  .lpText {
+    margin-right: unset;
+  }
 }
 
 @media (max-width: 1240px) {
-  .titleOne { display: flex; align-items: center; }
-  .titleOne span { font-size: 41.5px; padding-top: 12px; }
-  .titleTwo span { font-size: 48px; }
-  .titleThree span { font-size: 43px; }
+  .titleOne {
+    display: flex;
+    align-items: center;
+  }
 
-  .myPortrait { width: 525px; }
-  .lpBackground { top: 400px; }
+  .titleOne span {
+    font-size: 41.5px;
+    padding-top: 12px;
+  }
+
+  .titleTwo span {
+    font-size: 48px;
+  }
+
+  .titleThree span {
+    font-size: 43px;
+  }
+
+  .myPortrait {
+    width: 525px;
+  }
+
+  .lpBackground {
+    top: 400px;
+  }
 }
 
 @media (max-width: 1065px) {
-  .titleOne { width: 50px; }
-  .titleOne span { font-size: 32.5px; padding-top: 5px; }
-  .titleTwo span { font-size: 38.5px; line-height: 26px; }
-  .titleThree span { font-size: 35.3px; line-height: 33.5px; }
+  .titleOne {
+    width: 50px;
+  }
 
-  .myPortrait { width: 450px; }
-  .myPortraitBackground { width: 650px; }
-  .lpBackground { top: 300px; }
+  .titleOne span {
+    font-size: 32.5px;
+    padding-top: 5px;
+  }
+
+  .titleTwo span {
+    font-size: 38.5px;
+    line-height: 26px;
+  }
+
+  .titleThree span {
+    font-size: 35.3px;
+    line-height: 33.5px;
+  }
+
+  .myPortrait {
+    width: 450px;
+  }
+
+  .myPortraitBackground {
+    width: 650px;
+  }
+
+  .lpBackground {
+    top: 300px;
+  }
 }
 
 @media (max-width: 999px) {
-  .landingPage { padding-left: 24px; padding-right: 24px; }
-  .lpImage { margin-left: 48px; }
-  .lpText { margin-right: 24px; }
+  .landingPage {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .lpImage {
+    margin-left: 48px;
+  }
+
+  .lpText {
+    margin-right: 24px;
+  }
 }
 
 @media (max-width: 900px) {
-  .scroll-down { display: none; }
+  .scroll-down {
+    display: none;
+  }
 }
 
 @media (max-width: 848px) {
-  .titleOne { width: 45px; }
+  .titleOne {
+    width: 45px;
+  }
 
   .lpImage {
     width: 100%;
@@ -294,11 +375,24 @@ section {
     margin-top: 109.03px;
   }
 
-  .lpText { margin-left: unset; margin-right: unset; }
-  section { margin-top: 0px; }
+  .lpText {
+    margin-left: unset;
+    margin-right: unset;
+  }
 
-  .myPortrait { width: 350px; height: 100%; }
-  .myPortraitBackground { width: fit-content; height: 375px; }
+  section {
+    margin-top: 0px;
+  }
+
+  .myPortrait {
+    width: 350px;
+    height: 100%;
+  }
+
+  .myPortraitBackground {
+    width: fit-content;
+    height: 375px;
+  }
 
   .myImageContainer {
     display: flex;
@@ -306,17 +400,28 @@ section {
     justify-content: center;
     height: 400px;
     margin-top: 20px;
-
-    padding-left: 80px;
-    margin-left: -80px;
-    background-position: left center;
-    background-size: 130% auto;
   }
 
-  .landingPage { flex-direction: column; padding: 0; height: unset; }
-  .lpBackground { height: 40%; top: 350px; }
-  .lpText { height: unset; width: 100%; }
-  .myNameContainer { height: unset; justify-content: center; }
+  .landingPage {
+    flex-direction: column;
+    padding: 0;
+    height: unset;
+  }
+
+  .lpBackground {
+    height: 40%;
+    top: 450px;
+  }
+
+  .lpText {
+    height: unset;
+    width: 100%;
+  }
+
+  .myNameContainer {
+    height: unset;
+    justify-content: center;
+  }
 
   .socials {
     width: 100%;
@@ -326,41 +431,112 @@ section {
     margin-top: 35px;
   }
 
-  .socialsContainer { justify-content: center; }
-  .social-links { flex-direction: row; left: 0; } /* mobile ohne Offset */
-
-  .blueLine { position: absolute; left: 0; width: 15%; }
-  .scroll-down { display: none; }
-
-  .titleOne { align-items: center; }
-  .titleOne span { font-size: 32.5px; padding-top: 5px; }
-  .titleTwo span { font-size: 41px; line-height: 26px; }
-  .titleThree span { font-size: 36.8px; line-height: 33.5px; }
-
-  .letsTalkContainer { padding-top: 25px; }
-  .letsTalkButton {
-    padding: 10px 20px; font-size: 16px;
-    &:hover { padding: 10px 30px; margin: 0px 0px; }
+  .socialsContainer {
+    justify-content: center;
   }
 
-  .myEmail { display: none !important; }
+  .social-links {
+    flex-direction: row;
+    position: unset;
+  }
+
+  .blueLine {
+    position: absolute;
+    left: 0;
+    width: 15%;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+
+  .titleOne {
+    align-items: center;
+  }
+
+  .titleOne span {
+    font-size: 32.5px;
+    padding-top: 5px;
+  }
+
+  .titleTwo span {
+    font-size: 41px;
+    line-height: 26px;
+  }
+
+  .titleThree span {
+    font-size: 36.8px;
+    line-height: 33.5px;
+  }
+
+  .letsTalkContainer {
+    padding-top: 25px;
+  }
+
+  .letsTalkButton {
+    padding: 10px 20px;
+    font-size: 16px;
+
+    &:hover {
+      padding: 10px 30px;
+      margin: 0px 0px;
+    }
+  }
+
+  .myEmail {
+    display: none !important;
+  }
 }
 
 @media (max-width: 535px) {
-  .titleOne { width: 35px; }
-  .titleOne span { font-size: 25.5px; padding-top: 5px; }
-  .titleTwo span { font-size: 29px; line-height: 46px; }
-  .titleThree span { font-size: 26px; line-height: 10px; }
-  .lpBackground { height: 25%; top: 415px; }
+  .titleOne {
+    width: 35px;
+  }
+
+  .titleOne span {
+    font-size: 25.5px;
+    padding-top: 5px;
+  }
+
+  .titleTwo span {
+    font-size: 29px;
+    line-height: 46px;
+  }
+
+  .titleThree span {
+    font-size: 26px;
+    line-height: 10px;
+  }
+
+  .lpBackground {
+    height: 25%;
+    top: 515px;
+  }
 }
 
-@media (max-width: 425px) {
-  .myPortrait { width: 290px; }
-  .myPortraitBackground { height: 350px; }
+@media(max-width: 425px) {
+  .myPortrait {
+    width: 290px;
+  }
+
+  .myPortraitBackground {
+    height: 350px;
+  }
 }
 
 @media (max-width: 375px) {
-  .titleOne span { font-size: 20px; padding-top: 5px; }
-  .titleTwo span { font-size: 23px; line-height: 26px; }
-  .titleThree span { font-size: 20.6px; line-height: 19.5px; }
+  .titleOne span {
+    font-size: 20px;
+    padding-top: 5px;
+  }
+
+  .titleTwo span {
+    font-size: 23px;
+    line-height: 26px;
+  }
+
+  .titleThree span {
+    font-size: 20.6px;
+    line-height: 19.5px;
+  }
 }
