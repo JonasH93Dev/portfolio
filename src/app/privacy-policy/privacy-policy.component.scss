@@ -1,15 +1,15 @@
-/* ===== Section-Grundlayout (wie Imprint) ===== */
+
 section {
   position: relative;
   box-sizing: border-box;
   margin-top: 109px;
-  padding: 50px 0px;      /* kein Seiten-Padding, damit Linie bis rechts kann */
+  padding: 50px 0px;      
   z-index: 1000;
   min-height: 80vh;
   width: 100%;
   display: flex;
 
-  /* zentrischer Full-HD-Container */
+  
   > div {
     width: 100%;
     max-width: 1920px;
@@ -17,7 +17,7 @@ section {
   }
 }
 
-/* ===== Typografie (seitenlokal) ===== */
+
 section h1,
 section h2,
 section h3,
@@ -28,39 +28,34 @@ section li {
   color: #FFFFFF;
 }
 
-/* ===== Titelzeile mit Linien (wie Imprint) ===== */
 .title-row {
   display: grid;
-  grid-template-columns: 1fr auto 1fr; /* H1 exakt mittig */
+  grid-template-columns: 1fr auto 1fr; 
   align-items: center;
-  column-gap: 25px;        /* Figma-Gap */
+  column-gap: 25px;        
   width: 100%;
   margin: 0 0 40px 0;
 }
 
 .title-line {
   height: 0;
-  border-top: 4px solid #9747FF; /* Purple */
+  border-top: 4px solid #9747FF; 
 }
 
-/* Linke kurze Linie: 130px */
+
 .title-line--left {
   width: 130px;
   justify-self: end;
 }
 
-/* Rechte Linie: füllt bis ganz rechts (Padding wird unten kompensiert) */
+
 .title-line--right {
   width: 100%;
   justify-self: stretch;
 }
 
-/* Bei <= 1920px ggf. Seiten-Padding kompensieren (wie Imprint) */
-@media (max-width: 1920px) {
-  .title-line--right { margin-right: -100px; }
-}
 
-/* H1 grün */
+
 section h1.legal-title {
   margin: 0;
   font-weight: 700;
@@ -69,7 +64,7 @@ section h1.legal-title {
   color: #70E61C;
 }
 
-/* ===== Überschriften/Text wie Imprint ===== */
+
 section h2 {
   font-weight: 700;
   font-size: 33px;
@@ -95,8 +90,7 @@ section li {
   margin: 15px 0;
 }
 
-/* ===== Einzug/Breite für den kompletten Textbereich ab dem ersten H2 ===== */
-/* linker Einzug 200px, Content-Breite 968px – identisch zu Imprint */
+
 section > div > h2:first-of-type,
 section > div > h2:first-of-type ~ * {
   box-sizing: content-box;
@@ -104,7 +98,7 @@ section > div > h2:first-of-type ~ * {
   width: 968px;
 }
 
-/* ===== Deko-Hintergrund ===== */
+
 .lpBackground {
   width: 100%;
   height: 50%;
@@ -116,19 +110,76 @@ section > div > h2:first-of-type ~ * {
   user-select: none;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 1110px) {
-  section h1.legal-title { font-size: 48px; }
+/* =========================================================
+   PRIVACY POLICY – Responsive Ergänzungen
+   (nur Anhängen; nichts oben ändern)
+   ========================================================= */
+
+/* 1241px – gleiche Einzüge wie Imprint */
+@media (max-width: 1241px) {
+  section > div { padding: 0 50px; }
 }
 
-@media (max-width: 900px) {
-  section { padding: 50px 25px; }
-  section h1.legal-title { font-size: 48px; }
-  .title-line--right { margin-right: -25px; } /* neues right padding */
+/* 1111px – Inhalt auf lesbare Zeilenbreite begrenzen */
+@media (max-width: 1111px) {
+  section > div { max-width: 980px; }
 }
 
-@media (max-width: 425px) {
-  section h1.legal-title { font-size: 38px; }
-  section h2 { font-size: 20px; }
+/* 999px – mobiles Layout + störenden Blob ausblenden */
+@media (max-width: 999px) {
+  /* Seiteneinzug wie in anderen Sections */
+  section > div { padding: 0 20px; }
+
+  /* Überschriften etwas kleiner, ohne Stiländerung */
+  section h1.legal-title { font-size: 48px; line-height: 1.15; }
+  section h2 { font-size: 28px; line-height: 1.2; }
+  section h3 { font-size: 20px; line-height: 1.2; }
+
+  /* Die Desktop-Einrückung links entfernen */
+  section > div > h2:first-of-type,
+  section > div > h2:first-of-type ~ * {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  /* Titel-Zeile enger staffeln */
   .title-row { column-gap: 16px; }
+  .title-line--left { width: 90px; }
+
+  /* Lange Wörter/Links dürfen umbrechen */
+  section p,
+  section li,
+  section address,
+  section a { overflow-wrap: anywhere; word-break: break-word; }
+
+  /* Tabellen/Code (falls vorhanden) sollen scrollen statt überlaufen */
+  section table,
+  section pre,
+  section code { display: block; max-width: 100%; overflow-x: auto; }
+
+  /* Hintergrund-Blob ausblenden, damit nichts überdeckt */
+  .lpBackground { display: none; }
+}
+
+/* 610px – noch etwas enger */
+@media (max-width: 610px) {
+  section > div { padding: 0 16px; }
+  .title-line--left { width: 80px; }
+}
+
+/* 450px – kompaktere Typo/Abstände */
+@media (max-width: 450px) {
+  section h1.legal-title { font-size: 42px; }
+  section h2 { font-size: 24px; }
+  section h3 { font-size: 19px; }
+  .title-row { column-gap: 12px; }
+  .title-line--left { width: 68px; }
+}
+
+/* 390px – Zielbreite, alles maximal kompakt und lesbar */
+@media (max-width: 390px) {
+  section h1.legal-title { font-size: 38px; }
+  section h2 { font-size: 22px; }
+  .title-row { column-gap: 10px; }
+  .title-line--left { width: 60px; }
 }

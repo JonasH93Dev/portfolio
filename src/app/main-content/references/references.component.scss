@@ -1,10 +1,7 @@
-/* =========================================
-   REFERENCES – Figma-exakt, HTML unverändert
-   ========================================= */
 
 .refs {
   position: relative;
-  overflow: visible;             /* wichtig: Blob darf überragen */
+  overflow: visible;          
   margin: 120px auto 0;
   width: 100%;
   max-width: 1920px;
@@ -17,21 +14,21 @@
   padding-right: 100px;
 }
 
-/* Die innere Reihe */
+
 .refs-row {
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 48px;                     /* Abstand Karte ↔ Avatar */
+  gap: 48px;                     
   width: 100%;
-  max-width: 1171.5px;           /* Figma Frame-Breite */
+  max-width: 1171.5px;         
   margin: 0 auto;
   height: 272px;
-  z-index: 1;                    /* Inhalt über dem Blob */
+  z-index: 1;                 
 }
 
-/* -------- Karte links -------- */
+
 .refs-card {
   box-sizing: border-box;
   display: flex;
@@ -46,10 +43,10 @@
   color: #fff;
   background: transparent;
   position: relative;
-  z-index: 1;                    /* über Blob */
+  z-index: 1;                  
 }
 
-/* lila Doppelbalken */
+
 .refs-quote {
   position: absolute;
   top: -52px;
@@ -67,7 +64,7 @@
 }
 .refs-quote::after { left: 38px; }
 
-/* Textblock */
+
 .refs-text {
   width: 100%;
   max-width: 660px;
@@ -78,7 +75,7 @@
   color: #FFFFFF;
 }
 
-/* Autorzeile */
+
 .refs-author {
   display: flex;
   align-items: center;
@@ -102,10 +99,9 @@
   min-width: max-content;
 }
 
-/* -------- Avatar rechts -------- */
 .refs-avatar-side {
-  position: relative;            /* Referenz für Z-Stack mit Blob */
-  z-index: 1;                    /* über Blob */
+  position: relative;           
+  z-index: 1;                    
 }
 .refs .refs-avatar-side > .refs-avatar {
   box-sizing: border-box !important;
@@ -118,10 +114,10 @@
   display: block !important;
 }
 
-/* -------- Controls -------- */
+
 .refs-controls {
   position: relative;
-  z-index: 1;                    /* über Blob */
+  z-index: 1;                    
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,17 +153,140 @@
   opacity: 1;
 }
 
-/* -------- Grüner Blob-Hintergrund (wie About me) -------- */
-/* exakte, nicht-responsive Platzierung – nur Anzeige */
 .aboutBackground {
   position: absolute;
-  right: 0px;                  /* an rechten Rand heraustreten lassen */
-  top: -640px;                   /* so, dass er hinter Avatar beginnt */
-  width: 428.59px;               /* Figma: 428.59 px */
-  height: auto;                  /* keine Verzerrung */
-  transform: rotate(180deg);  /* Figma-Rotation */
+  right: 0px;                  
+  top: -640px;                   
+  width: 428.59px;               
+  height: auto;                  
+  transform: rotate(180deg);  
   transform-origin: center;
   pointer-events: none;
   user-select: none;
-  z-index: 0;                    /* hinter allem Inhalt der Section */
+  z-index: 0;                  
+}
+
+@media (max-width: 1350px) {
+  .refs { padding-left: 80px; padding-right: 80px; }
+  .refs-row { gap: 40px; max-width: 1100px; }
+  .refs-card { width: 780px; padding: 40px 80px; }
+  .refs .refs-avatar-side > .refs-avatar { width: 260px !important; height: 260px !important; }
+  
+  .refs-quote { top: -40px; left: -56px; }
+}
+
+
+@media (max-width: 1241px) {
+  .refs { padding-left: 50px; padding-right: 50px; }
+  .refs-row { max-width: 980px; gap: 36px; }
+  .refs-card { width: 680px; padding: 32px 64px; }
+  .refs .refs-avatar-side > .refs-avatar { width: 232px !important; height: 232px !important; }
+  .refs-quote { top: -36px; left: -44px; }
+}
+
+
+@media (max-width: 1111px) {
+  .refs-row { max-width: 900px; gap: 32px; }
+  .refs-card { width: 620px; padding: 28px 56px; }
+  .refs-text { font-size: 18px; } 
+  .refs .refs-avatar-side > .refs-avatar { width: 208px !important; height: 208px !important; }
+  .refs-quote { top: -32px; left: -36px; }
+}
+
+
+@media (max-width: 999px) {
+  .refs { padding-left: 20px; padding-right: 20px; gap: 32px; }
+
+  .refs-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    height: auto;
+    width: 100%;
+    max-width: 342px;   
+    margin: 0 auto;
+  }
+
+
+  .refs-avatar-side { order: 0; }
+  .refs-card        { order: 1; }
+
+ 
+  .refs .refs-avatar-side > .refs-avatar {
+    width: 144px !important;
+    height: 144px !important;
+    border-width: 4px !important;
+  }
+
+
+  .refs-card {
+    width: 342px;
+    min-height: 272px;
+    height: auto;
+    padding: 16px 16px 16px 24px; 
+    gap: 24px;
+    align-items: stretch;
+  }
+
+
+  .refs-text   { width: 310px; max-width: 310px; font-size: 16px; line-height: 120%; }
+  .refs-author { width: 310px; font-size: 16px; line-height: 120%; gap: 8px; }
+  .refs-line   { flex: 0 0 55px; max-width: 55px; border-top-width: 2px; }
+
+
+  .refs-controls { width: 184px; height: 40px; gap: 20px; margin: 0 auto; }
+
+  .refs-quote { top: -20px; left: -12px; pointer-events: none; }
+  .refs-quote::before,
+  .refs-quote::after { width: 28px; height: 68px; }
+}
+
+
+@media (max-width: 610px) {
+  .refs { padding-left: 16px; padding-right: 16px; }
+}
+
+
+@media (max-width: 450px) {
+  .refs-row  { max-width: 342px; }
+  .refs-card { width: 342px; }
+
+  .refs-quote { top: -18px; left: -14px; }
+}
+
+
+@media (max-width: 375px) {
+  .refs-row  { max-width: 320px; }
+  .refs-card { width: 320px; padding: 16px 12px 16px 22px; }
+  .refs-text, .refs-author { width: 288px; }
+  .refs-quote { top: -16px; left: -12px; }
+}
+
+
+@media (max-width: 999px) {
+ 
+  .refs-quote {
+    top: -22px;     
+    left: -80px;    
+    pointer-events: none;
+  }
+  .refs-quote::before,
+  .refs-quote::after {
+    width: 28px;
+    height: 68px;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .refs-quote {
+    top: -20px;
+    left: -72px;    
+  }
+}
+@media (max-width: 375px) {
+  .refs-quote {
+    top: -18px;
+    left: -68px;
+  }
 }

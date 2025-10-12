@@ -8,46 +8,45 @@ section {
   max-width: 1920px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding-left: 0px;     /* symmetrisch wie Header/Footer – links 0, rechts 100 in deinem Layout */
+  padding-left: 0px;     
   padding-right: 100px;
 }
 
-/* ===================== CONTACT-HEADER ===================== */
-/* Linie links + Titel mittig + dynamisch responsiv */
+
 .contactHeader {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;    /* zentriert das gesamte Trio: Linie – Titel – (unsichtbarer) Spacer */
-  gap: 32px;                  /* Figma-Abstand Linie <-> Titel */
+  justify-content: center;    
+  gap: 32px;                  
   width: 100%;
   margin-bottom: 50px;
 }
 
-/* Lila Linie – wächst mit der verfügbaren Breite */
+
 .blueLine {
   height: 4px;
   background: #9747FF;
   border-radius: 2px;
-  flex: 1 1 0;                /* dynamische Länge (responsive) */
-  min-width: 40px;            /* kleiner Sicherheitswert, kann auch 0 sein */
+  flex: 1 1 0;                
+  min-width: 40px;           
 }
 
-/* Unsichtbarer rechter Gegenpart – gleiche Flex-Regel wie links */
+
 .contactHeader::after {
   content: "";
   height: 4px;
-  flex: 1 1 0;                /* sorgt dafür, dass der Titel geometrisch in der Mitte bleibt */
+  flex: 1 1 0;              
 }
 
-/* Titelblock: keine feste Breite nötig, Text bleibt mittig durch Flex-Setup */
+
 .contactTitle {
   display: flex;
   align-items: center;
   justify-content: center;
 
   > h2 {
-    font-size: 90px;          /* Figma */
+    font-size: 90px;         
     font-weight: 700;
     line-height: 120%;
     margin: 0;
@@ -55,7 +54,7 @@ section {
     color: #fff;
   }
 }
-/* ===================== /CONTACT-HEADER ===================== */
+
 
 .contactContent {
   height: 600px;
@@ -343,8 +342,8 @@ section {
   > a { display: flex; }
 
   &:hover {
-    border-color: #70E61C;  /* Rahmen grün */
-    > a { color: #70E61C; } /* Pfeil grün */
+    border-color: #70E61C;  
+    > a { color: #70E61C; } 
   }
 }
 

@@ -1,23 +1,23 @@
-/* ===== Section-Grundlayout ===== */
+
 section {
   position: relative;
   box-sizing: border-box;
   margin-top: 109px;
-  padding: 50px 0px;      /* Innenabstand des Inhaltscontainers */
+  padding: 50px 0px;    
   z-index: 1000;
   min-height: 80vh;
-  width: 100%;              /* volle Breite, kein max hier */
+  width: 100%;            
   display: flex;
 
-  /* zentrischer Full-HD-Container */
+
   > div {
     width: 100%;
-    max-width: 1920px;      /* Full HD Begrenzung */
-    margin: 0 auto;         /* zentrieren */
+    max-width: 1920px;      
+    margin: 0 auto;         
   }
 }
 
-/* ===== Typografie/Farben – nur innerhalb dieser Seite ===== */
+
 section h1,
 section h2,
 section h3,
@@ -28,45 +28,38 @@ section li {
   color: #FFFFFF;
 }
 
-/* ===================== Titelzeile mit Linien ===================== */
-/* Grid: H1 exakt in der Mitte; rechte Linie füllt und überragt bis Viewportrand */
+
 .title-row {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  column-gap: 25px;         /* Figma-Gap */
+  column-gap: 25px;         
   width: 100%;
   margin: 0 0 40px 0;
 }
 
 .title-line {
   height: 0;
-  border-top: 4px solid #9747FF; /* Purple */
+  border-top: 4px solid #9747FF; 
 }
 
-/* Linke kurze Linie (fix 130px) */
+
 .title-line--left {
   width: 130px;
   justify-self: end;
 }
 
-/* Rechte Linie:
-   - füllt die Zelle
-   - ignoriert rechts das Padding (100px)
-   - und überragt bei >1920px Viewport bis zum rechten Rand
-     (Container ist zentriert, daher (100vw - 100%) / 2 = Außenrand pro Seite) */
+
 .title-line--right {
   width: 100%;
   justify-self: stretch;
  
 }
 
-/* Wenn Viewport <= 1920px gibt es keinen Außenrand -> nur Padding ignorieren */
-@media (max-width: 1920px) {
-  .title-line--right { margin-right: -100px; }
-}
 
-/* H1 mittig und grün */
+
+
+
 section h1.legal-title {
   margin: 0;
   font-weight: 700;
@@ -75,7 +68,7 @@ section h1.legal-title {
   color: #70E61C;
 }
 
-/* ===================== weitere Überschriften/Text ===================== */
+
 section h2 {
   font-weight: 700;
   font-size: 33px;
@@ -101,21 +94,21 @@ section li {
   margin: 15px 0;
 }
 
-/* Liste unter „Imprint“ */
+
 section .imprint-list {
   margin: 10px 0 0 0;
   padding-left: 1.2rem;
 }
 section .imprint-list li { margin: 6px 0; }
 
-/* Langer Rechtstext-Block */
+
 section .legal-sections {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-/* Deko-Hintergrund */
+
 .lpBackground {
   width: 100%;
   height: 50%;
@@ -127,26 +120,28 @@ section .legal-sections {
   user-select: none;
 }
 
-/* ===================== Responsive Anpassungen ===================== */
 @media (max-width: 1110px) {
-  section h1.legal-title { font-size: 48px; }
-}
-@media (max-width: 900px) {
-  section { padding: 50px 25px; }
-  section h1.legal-title { font-size: 48px; }
-  .title-line--right { margin-right: -25px; } /* neues right padding */
-}
-@media (max-width: 425px) {
-  section h1.legal-title { font-size: 38px; }
-  section h2 { font-size: 20px; }
-  .title-row { column-gap: 16px; }
-}
-/* Ab dem ersten H2 (= "Imprint") und für ALLE folgenden Geschwister:
-   linker Einzug 200px + max Breite 1168px */
-section > div > h2:first-of-type,
-section > div > h2:first-of-type ~ * {
-  box-sizing: content-box;
-  padding-left: 200px;
-  width: 968px;
+    h1 {
+        font-size: 66px;
+    }
 }
 
+@media(max-width: 841px) {
+    section {
+        padding: 50px 25px;
+    }
+
+    h1 {
+        font-size: 66px;
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

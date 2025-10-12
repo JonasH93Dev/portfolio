@@ -144,6 +144,7 @@
   .projectImage {
     > img {
       width: 350px;
+     
     }
   }
 }
@@ -211,7 +212,7 @@
     width: 280px;
     > img {
       width: 280px;
-      height: 280px;
+      height: auto;
     }
   }
 
