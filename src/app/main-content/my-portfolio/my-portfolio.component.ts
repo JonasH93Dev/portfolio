@@ -34,6 +34,28 @@ export class MyPortfolioComponent implements OnInit {
         textAlignment: 'left',
         isWIP: false
       },
+      {
+        title: this.translate.instant('PROJECTS.Pokedex.TITLE'),
+        stack: this.translate.instant('PROJECTS.Pokedex.STACK'),
+        description: this.translate.instant('PROJECTS.Pokedex.DESCRIPTION'),
+        imageUrl: '/assets/img/projects/Pokedex.png',
+        liveTestUrl: 'https://jonas-hanke.developerakademie.net/pokedex/index.html',
+        githubUrl: 'https://github.com/JonasH93Dev/Pokedex',
+        flexDirection: 'row-reverse',
+        textAlignment: 'right',
+        isWIP: false
+      },
+       {
+        title: this.translate.instant('PROJECTS.Join.TITLE'),
+        stack: this.translate.instant('PROJECTS.Join.STACK'),
+        description: this.translate.instant('PROJECTS.Join.DESCRIPTION'),
+        imageUrl: '/assets/img/projects/join.png',
+        liveTestUrl: '',
+        githubUrl: '',
+        flexDirection: 'row',
+        textAlignment: 'left',
+        isWIP: false
+      }
       
     ];
   }

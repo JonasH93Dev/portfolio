@@ -32,6 +32,16 @@
       "TITLE": "El Pollo Loco",
       "STACK": "JavaScript | HTML | CSS",
       "DESCRIPTION": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the chicken attacking the village."
+    },
+    "Pokedex": {
+      "TITLE": "Pokédex",
+      "STACK": "JavaScript | HTML | CSS | API",
+      "DESCRIPTION": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+    },
+    "Join": {
+      "TITLE": "Join",
+      "STACK": "Angular | TypeScript | HTML | SCSS | Firebase",
+      "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
     }
   },
   "CONTACT_SECTION": {

@@ -1,6 +1,6 @@
 section {
   margin-top: 109.03px;
-  max-width: 1920px;
+  width: 100%;                       /* volle Breite, nicht begrenzen */
   background-color: rgb(20, 29, 47);
 }
 
@@ -8,6 +8,8 @@ section {
   display: flex;
   flex-direction: row;
   width: 100%;
+  max-width: 1920px;                 /* zentrierter Full-HD-Container */
+  margin: 0 auto;                    /* mittig auf 4K & größer */
   box-sizing: border-box;
   padding-left: 100px;
   padding-right: 100px;
@@ -32,15 +34,12 @@ section {
 
   background-image: url('/assets/img/blur-shapes/part_1.png');
   background-repeat: no-repeat;
-  background-position: left center;  /* bleibt links hinter dem Portrait */
+  background-position: left center;
   background-size: contain;
 
-  /* ⬅️⬆️➡️⬇️  Malfläche erweitern … */
-  padding: 120px 160px 80px 140px;   /* top right bottom left */
-  /* … und optisch wieder ausgleichen */
+  padding: 120px 160px 80px 140px;
   margin: -120px -160px -80px -140px;
 }
-
 
 .myPortrait {
   width: 600px;
@@ -277,7 +276,6 @@ section {
     height: 400px;
     margin-top: 20px;
 
-    /* ✅ kompaktere Werte für Mobile */
     padding-left: 80px;
     margin-left: -80px;
     background-position: left center;
