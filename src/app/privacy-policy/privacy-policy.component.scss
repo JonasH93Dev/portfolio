@@ -110,64 +110,57 @@ section > div > h2:first-of-type ~ * {
   user-select: none;
 }
 
-/* =========================================================
-   PRIVACY POLICY – Responsive Ergänzungen
-   (nur Anhängen; nichts oben ändern)
-   ========================================================= */
 
-/* 1241px – gleiche Einzüge wie Imprint */
+
 @media (max-width: 1241px) {
   section > div { padding: 0 50px; }
 }
 
-/* 1111px – Inhalt auf lesbare Zeilenbreite begrenzen */
+
 @media (max-width: 1111px) {
   section > div { max-width: 980px; }
 }
 
-/* 999px – mobiles Layout + störenden Blob ausblenden */
+
 @media (max-width: 999px) {
-  /* Seiteneinzug wie in anderen Sections */
+
   section > div { padding: 0 20px; }
 
-  /* Überschriften etwas kleiner, ohne Stiländerung */
+
   section h1.legal-title { font-size: 48px; line-height: 1.15; }
   section h2 { font-size: 28px; line-height: 1.2; }
   section h3 { font-size: 20px; line-height: 1.2; }
 
-  /* Die Desktop-Einrückung links entfernen */
   section > div > h2:first-of-type,
   section > div > h2:first-of-type ~ * {
     padding-left: 0;
     width: 100%;
   }
 
-  /* Titel-Zeile enger staffeln */
   .title-row { column-gap: 16px; }
   .title-line--left { width: 90px; }
 
-  /* Lange Wörter/Links dürfen umbrechen */
+
   section p,
   section li,
   section address,
   section a { overflow-wrap: anywhere; word-break: break-word; }
 
-  /* Tabellen/Code (falls vorhanden) sollen scrollen statt überlaufen */
+
   section table,
   section pre,
   section code { display: block; max-width: 100%; overflow-x: auto; }
 
-  /* Hintergrund-Blob ausblenden, damit nichts überdeckt */
   .lpBackground { display: none; }
 }
 
-/* 610px – noch etwas enger */
+
 @media (max-width: 610px) {
   section > div { padding: 0 16px; }
   .title-line--left { width: 80px; }
 }
 
-/* 450px – kompaktere Typo/Abstände */
+
 @media (max-width: 450px) {
   section h1.legal-title { font-size: 42px; }
   section h2 { font-size: 24px; }
@@ -176,7 +169,7 @@ section > div > h2:first-of-type ~ * {
   .title-line--left { width: 68px; }
 }
 
-/* 390px – Zielbreite, alles maximal kompakt und lesbar */
+
 @media (max-width: 390px) {
   section h1.legal-title { font-size: 38px; }
   section h2 { font-size: 22px; }
