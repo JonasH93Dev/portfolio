@@ -4,15 +4,16 @@
 
 .refs {
   position: relative;
+  overflow: visible;             /* wichtig: Blob darf überragen */
   margin: 120px auto 0;
   width: 100%;
-  max-width: 1920px;            /* Full HD Deckel */
+  max-width: 1920px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
   box-sizing: border-box;
-  padding-left: 100px;          /* symmetrische Abstände wie Header/Footer */
+  padding-left: 100px;
   padding-right: 100px;
 }
 
@@ -21,12 +22,13 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;       /* Figma: oben bündig */
+  align-items: flex-start;
   gap: 48px;                     /* Abstand Karte ↔ Avatar */
   width: 100%;
   max-width: 1171.5px;           /* Figma Frame-Breite */
-  margin: 0 auto;                /* mittig statt rechtsbündig */
+  margin: 0 auto;
   height: 272px;
+  z-index: 1;                    /* Inhalt über dem Blob */
 }
 
 /* -------- Karte links -------- */
@@ -44,6 +46,7 @@
   color: #fff;
   background: transparent;
   position: relative;
+  z-index: 1;                    /* über Blob */
 }
 
 /* lila Doppelbalken */
@@ -100,6 +103,10 @@
 }
 
 /* -------- Avatar rechts -------- */
+.refs-avatar-side {
+  position: relative;            /* Referenz für Z-Stack mit Blob */
+  z-index: 1;                    /* über Blob */
+}
 .refs .refs-avatar-side > .refs-avatar {
   box-sizing: border-box !important;
   width: 272px !important;
@@ -109,11 +116,12 @@
   object-fit: cover !important;
   object-position: center 24% !important;
   display: block !important;
-  z-index: 2;
 }
 
 /* -------- Controls -------- */
 .refs-controls {
+  position: relative;
+  z-index: 1;                    /* über Blob */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,49 +157,17 @@
   opacity: 1;
 }
 
-/* -------- Responsive -------- */
-@media (max-width: 1280px) {
-  .refs {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  .refs-row {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  .refs-card {
-    padding: 40px 80px;
-    width: auto;
-    flex: 0 1 851.5px;
-  }
-  .refs-quote { left: -68px; top: -48px; }
-}
-
-@media (max-width: 1024px) {
-  .refs {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .refs-row {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    max-width: 720px;
-    margin: 0 auto;
-  }
-  .refs-card {
-    width: 100%;
-    height: auto;
-  }
-  .refs-avatar-side {
-    width: 240px;
-    height: 240px;
-    align-self: center;
-    margin-right: 0;
-  }
-  .refs-avatar {
-    width: 240px;
-    height: 240px;
-  }
-  .refs-avatar-side::before { display: none; }
+/* -------- Grüner Blob-Hintergrund (wie About me) -------- */
+/* exakte, nicht-responsive Platzierung – nur Anzeige */
+.aboutBackground {
+  position: absolute;
+  right: -140px;                  /* an rechten Rand heraustreten lassen */
+  top: -640px;                   /* so, dass er hinter Avatar beginnt */
+  width: 428.59px;               /* Figma: 428.59 px */
+  height: auto;                  /* keine Verzerrung */
+  transform: rotate(180deg);  /* Figma-Rotation */
+  transform-origin: center;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;                    /* hinter allem Inhalt der Section */
 }
