@@ -1,4 +1,4 @@
-/* ---------- Basis ---------- */
+
 
 section {
   margin-top: 109.03px;
@@ -10,7 +10,7 @@ section {
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 1920px;   /* zentrierter Full-HD-Container */
+  max-width: 1920px;   
   margin: 0 auto;
   box-sizing: border-box;
   padding-left: 100px;
@@ -34,7 +34,7 @@ section {
   width: fit-content;
   height: fit-content;
 
-  background-image: url('/assets/img/blur-shapes/part_1.png');
+  background-image: url('assets/img/blur-shapes/part_1.png');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
@@ -134,9 +134,7 @@ section {
   top: 500px;
 }
 
-/* ---------- Socials ---------- */
-/* <=1920px bleibt alles wie gehabt. */
-/* Containerbegrenzung sorgt nur auf großen Screens für das richtige Alignment. */
+
 .socials {
   display: flex;
   position: relative;
@@ -146,8 +144,8 @@ section {
   height: 40px;
 
   width: 100%;
-  max-width: 1920px;     /* Begrenzung */
-  margin: 0 auto;        /* mittig halten */
+  max-width: 1920px;     
+  margin: 0 auto;       
   box-sizing: border-box;
 }
 
@@ -161,9 +159,9 @@ section {
 .social-links {
   display: flex;
   position: relative;
-  left: 120px;                 /* exakt wie vorher */
+  left: 120px;                
   align-items: center;
-  justify-content: flex-start; /* NICHT mehr verteilen */
+  justify-content: flex-start; 
   gap: 42px;
 }
 
@@ -192,11 +190,11 @@ section {
   height: 4px;
 }
 
-/* ---------- Scroll-Down ---------- */
+
 
 .scroll-down {
   display: flex;
-  justify-content: center;  /* wie bisher */
+  justify-content: center;  
   align-items: center;
   writing-mode: vertical-lr;
   font-size: 23px;
@@ -205,7 +203,7 @@ section {
   z-index: 1001;
   height: 160px;
   gap: 5px;
-  margin-right: 100px;       /* wie bisher */
+  margin-right: 100px;      
   animation: jump 2s infinite;
 }
 
@@ -215,22 +213,21 @@ section {
   100% { transform: translateY(0); }
 }
 
-/* ---------- Nur > Full-HD (Container-Ausrichtung) ---------- */
+
 @media (min-width: 1921px) {
-  /* Social-Leiste auf 1920px begrenzen und mittig lassen.
-     Das left:120px bleibt relativ zum Container bestehen. */
+  
   .socials {
     max-width: 1920px;
     margin: 0 auto;
   }
 
-  /* Scroll-Hinweis am rechten Container-Rand mit 100px Innenabstand */
+  
   .scroll-down {
     max-width: 1920px;
     margin: 0 auto;
     justify-content: flex-end;
-    padding-right: 100px;   /* statt margin-right */
-    padding-left: 100px;    /* symmetrisch, schadet nicht */
+    padding-right: 100px;   
+    padding-left: 100px;   
     margin-right: 0;
     box-sizing: border-box;
   }

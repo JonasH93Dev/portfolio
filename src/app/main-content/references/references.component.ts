@@ -27,7 +27,7 @@ export class ReferencesComponent {
 
   imgSrc(): string {
   // liegt in: public/assets/img/references/1.png, 2.png, 3.png
-  return `/assets/img/references/${this.current + 1}.png`; // <-- führender Slash
+  return `assets/img/references/${this.current + 1}.png`; // <-- führender Slash
 }
 
 }

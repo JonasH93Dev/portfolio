@@ -14,16 +14,16 @@
     </div>
     <div class="mobileMenu" (click)="toggleMenu()">
       @if (!isMenuOpen && transitionState !== 'open') {
-        <img src="/assets/img/burger-menu/burger.png" alt="Open Menu" />
+        <img src="assets/img/burger-menu/burger.png" alt="Open Menu" />
       }
       @if (transitionState === 'open') {
-        <img src="/assets/img/burger-menu/burger_transition.png" alt="Opening Menu" />
+        <img src="assets/img/burger-menu/burger_transition.png" alt="Opening Menu" />
       }
       @if (isMenuOpen && transitionState !== 'close') {
-        <img src="/assets/img/burger-menu/close.png" alt="Close Menu" />
+        <img src="assets/img/burger-menu/close.png" alt="Close Menu" />
       }
       @if (transitionState === 'close') {
-        <img src="/assets/img/burger-menu/close_transition.png" alt="Closing Menu" />
+        <img src="/ssets/img/burger-menu/close_transition.png" alt="Closing Menu" />
       }
     </div>
     <div class="mobileNav" [class.open]="isMenuOpen">

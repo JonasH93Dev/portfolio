@@ -60,7 +60,7 @@
         </div>
         <div class="checkbox" >
           <label>
-            <img [src]="isPrivacyPolicyAccepted ? '/assets/img/checkbox/checkbox_checked.png' : '/assets/img/checkbox/checkbox.png'" alt="Checkbox" (click)="isPrivacyPolicyAccepted = !isPrivacyPolicyAccepted">
+            <img [src]="isPrivacyPolicyAccepted ? 'assets/img/checkbox/checkbox_checked.png' : 'assets/img/checkbox/checkbox.png'" alt="Checkbox" (click)="isPrivacyPolicyAccepted = !isPrivacyPolicyAccepted">
             <span>{{ 'TERMS.PRIVACY_POLICY' | translate }}
               <a [routerLink]="['/privacy-policy']">{{ 'TERMS.PRIVACY_POLICY_LINK' | translate }}</a>
               {{ 'TERMS.AGREE_TO_PROCESSING' | translate }}
@@ -83,6 +83,6 @@
   <div class="contactBackground"></div>
 
   <div class="goUp">
-    <a href="#top"><img src="/assets/img/shapes/arrow_up.png" alt="Go up" /></a>
+    <a href="#top"><img src="assets/img/shapes/arrow_up.png" alt="Go up" /></a>
   </div>
 </section>

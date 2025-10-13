@@ -102,7 +102,7 @@ section {
 }
 
 .contactBackground {
-  background-image: url("/assets/img/blur-shapes/part_7.png");
+  background-image: url("assets/img/blur-shapes/part_7.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -176,13 +176,13 @@ section {
     border: 1px solid rgba(112, 230, 28, 1) !important;
 
     > input {
-      background-image: url("/assets/img/shapes/form_valid.png");
+      background-image: url("assets/img/shapes/form_valid.png");
       background-position: right 20px center;
       background-repeat: no-repeat;
     }
 
     > textarea {
-      background-image: url("/assets/img/shapes/form_valid.png");
+      background-image: url("assets/img/shapes/form_valid.png");
       background-position: right 20px top 15px;
       background-repeat: no-repeat;
     }
@@ -192,13 +192,13 @@ section {
     border: 1px solid rgba(230, 28, 64, 1) !important;
 
     > input {
-      background-image: url("/assets/img/shapes/form_invalid.png");
+      background-image: url("assets/img/shapes/form_invalid.png");
       background-position: right 20px center;
       background-repeat: no-repeat;
     }
 
     > textarea {
-      background-image: url("/assets/img/shapes/form_invalid.png");
+      background-image: url("assets/img/shapes/form_invalid.png");
       background-position: right 20px top 15px;
       background-repeat: no-repeat;
     }
